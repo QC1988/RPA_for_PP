@@ -22,7 +22,7 @@ app = xw.App(visible=True)
 print("Excel will be open.")
 
 # Excelファイルを開き、読み取り専用アラームにNoを選択する
-wb_source = app.books.open(fullname='C:\\Users\\035203557\\Desktop\\納期調整\\テスト用.xlsm',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
+wb_source = app.books.open(fullname='',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
 
 # sheetを選択する
 sht = wb_source.sheets[0]
