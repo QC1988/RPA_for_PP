@@ -76,12 +76,12 @@ print(year_month_day_hour_min_sec)
 logger.info(year_month_day_hour_min_sec)
 
 # Excelファイルを開き、読み取り専用アラームにNoを選択する　コピー版
-wb_copy = app.books.open(fullname='C:\\Users\\035203557\\Desktop\\kaizen_space\\RPA\\8.UPS_Update_production_schedule\\UPS日程表 201106  - コピー.xlsm',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
+wb_copy = app.books.open(fullname='',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
 # 1番目のsheetを選択する
 sht_copy = wb_copy.sheets[0]
 
 # Excelファイルを開き、読み取り専用アラームにNoを選択する　オリジナル版 
-wb_original = app.books.open(fullname='C:\\Users\\035203557\\Desktop\\kaizen_space\\RPA\\8.UPS_Update_production_schedule\\UPS日程表 201106 .xlsm',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
+wb_original = app.books.open(fullname='',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
 # 1番目のsheetを選択する
 sht_original = wb_original.sheets[0]
 
