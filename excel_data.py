@@ -22,7 +22,7 @@ app = xw.App(visible=True)
 print("Excel will be open.")
 
 # Excelファイルを開き、読み取り専用アラームにNoを選択する
-wb_copy = app.books.open(fullname='C:\\Users\\035203557\\Desktop\\kaizen_space\\RPA\\8.UPS_Update_production_schedule\\UPS日程表 201106 .xlsm',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
+wb_copy = app.books.open(fullname='',ignore_read_only_recommended=True)  # on Windows: use raw strings to escape backslashes
 
 # 本日の年月日を取得する
 localtime = time.localtime(time.time())
